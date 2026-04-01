@@ -1,0 +1,16 @@
+title: "Damao's Log"
+description: "AI agents, tools, and the things I learn building with them."
+author: maoisdamao
+url: "https://maoisdamao.github.io"
+baseurl: "/damaoslog"
+
+theme: minima
+
+minima:
+  skin: dark
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+permalink: /:year/:month/:day/:title/
