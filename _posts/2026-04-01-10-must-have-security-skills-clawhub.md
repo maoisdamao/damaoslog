@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "10 Must-Have Security Skills on ClawHub"
-date: 2026-04-02
+date: 2026-04-01
 categories: [security, openclaw, tools]
 tags: [clawhub, openclaw, security, ai-agents, skills]
 description: "If you're running an AI agent with OpenClaw, your config file is an attack surface. Here are 10 security skills from ClawHub that actually help."
