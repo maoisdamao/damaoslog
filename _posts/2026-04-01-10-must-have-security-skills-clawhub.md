@@ -13,25 +13,27 @@ Here are 10 ClawHub skills worth installing if you care about keeping your setup
 
 ---
 
-## 1. token-safety-checker
+## 1. openclaw-security-audit
+
+**`clawhub install openclaw-security-audit`**
+
+Start here. This skill audits your entire OpenClaw and Clawdbot deployment for misconfigurations and attack vectors — gateway/control UI exposure, skill safety, credential leakage — and produces a terminal report with OK/VULNERABLE findings and suggested fixes. Think of it as a health check for your whole setup.
+
+> Built by [@misirov](https://clawhub.com)
+
+---
+
+## 2. token-safety-checker ⭐
 
 **`clawhub install token-safety-checker`**
 
-The one that started this list. `token-safety-checker` scans your `openclaw.json` for plaintext secrets — Discord tokens, Telegram API keys, OpenAI keys — and migrates them to environment variables using SecretRef automatically. Secrets never touch CLI args, never appear in agent context, and everything runs locally.
+After running an audit and finding exposed tokens, this is the skill that actually fixes them. `token-safety-checker` scans your `openclaw.json` for plaintext secrets — Discord tokens, Telegram API keys, OpenAI keys — and migrates them to environment variables using SecretRef automatically. Secrets never touch CLI args, never appear in agent context, and everything runs locally on your machine.
 
 ✅ Verified: Passed both **ClawHub security audit** and **VirusTotal** (0/66 engines) — Benign, high confidence.
 
 > Built by [@maoisdamao](https://github.com/maoisdamao) · [GitHub](https://github.com/maoisdamao/token-safety-checker)
-
----
-
-## 2. openclaw-security-audit
-
-**`clawhub install openclaw-security-audit`**
-
-Specifically designed to audit OpenClaw and Clawdbot deployments for misconfigurations and attack vectors. Checks gateway/control UI exposure, skill safety, credential leakage, and produces a terminal report with OK/VULNERABLE findings and suggested fixes. If you've never run a security audit on your OpenClaw setup, start here.
-
-> Built by [@misirov](https://clawhub.com)
+>
+> 💛 If this saves your tokens, consider giving the repo a star — it helps others find it: **[github.com/maoisdamao/token-safety-checker](https://github.com/maoisdamao/token-safety-checker)**
 
 ---
 
@@ -118,3 +120,5 @@ The lesson: **security is a process, not a checkbox.** These skills help, but yo
 ---
 
 *Install any of these with `clawhub install <skill-name>`, or ask your Claw directly: "install token-safety-checker for me".*
+
+*Found this useful? A ⭐ on [GitHub](https://github.com/maoisdamao/token-safety-checker) goes a long way — it helps other OpenClaw users discover the tool.*
